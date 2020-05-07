@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ys-61-QC2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Score: 0-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameVC" customModule="Cat_breeds_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="prS-dn-hsz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="764"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-t5-i6G">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="374"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RaJ-t5-i6G" secondAttribute="height" multiplier="1:1" id="3zT-FB-q7A"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-zf-Rc4">
+                                        <rect key="frame" x="57" y="394" width="300" height="370"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUP-Bg-6xo">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="77.5"/>
+                                                <color key="backgroundColor" red="0.36055624499593897" green="0.28737807735612114" blue="0.060235362324541387" alpha="0.8204730308219178" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                <state key="normal" title="BREED1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answerButtonIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mg2-ca-Z3v"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIM-tC-wQf">
+                                                <rect key="frame" x="0.0" y="97.5" width="300" height="77.5"/>
+                                                <color key="backgroundColor" red="0.360556245" green="0.28737807739999999" blue="0.060235362319999999" alpha="0.8204730308" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                <state key="normal" title="BREED2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answerButtonIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeq-f9-kHk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvJ-Gj-eLk">
+                                                <rect key="frame" x="0.0" y="195" width="300" height="77.5"/>
+                                                <color key="backgroundColor" red="0.360556245" green="0.28737807739999999" blue="0.060235362319999999" alpha="0.8204730308" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                <state key="normal" title="BREED3">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answerButtonIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ljg-6L-BkO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-lv-Ntz">
+                                                <rect key="frame" x="0.0" y="292.5" width="300" height="77.5"/>
+                                                <color key="backgroundColor" red="0.360556245" green="0.28737807739999999" blue="0.060235362319999999" alpha="0.8204730308" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                <state key="normal" title="BREED4">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answerButtonIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4F-mQ-64g"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Axf-rU-n5P"/>
+                                            <constraint firstItem="SvJ-Gj-eLk" firstAttribute="height" secondItem="cEm-lv-Ntz" secondAttribute="height" id="Nv3-Jc-vr0"/>
+                                            <constraint firstItem="rUP-Bg-6xo" firstAttribute="height" secondItem="gIM-tC-wQf" secondAttribute="height" id="PWg-Wu-nBB"/>
+                                            <constraint firstItem="gIM-tC-wQf" firstAttribute="height" secondItem="SvJ-Gj-eLk" secondAttribute="height" id="TKB-yX-0xX"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RaJ-t5-i6G" secondAttribute="trailing" constant="20" symbolic="YES" id="Yio-SK-u1i"/>
+                                    <constraint firstItem="RaJ-t5-i6G" firstAttribute="leading" secondItem="prS-dn-hsz" secondAttribute="leading" constant="20" symbolic="YES" id="tYg-tB-LgX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93150652876142126" green="0.73945358805476724" blue="0.36089487665445463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="prS-dn-hsz" secondAttribute="trailing" id="Adv-c1-puj"/>
+                            <constraint firstItem="prS-dn-hsz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FLh-Dm-xUG"/>
+                            <constraint firstItem="prS-dn-hsz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TVJ-6d-CG1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="prS-dn-hsz" secondAttribute="bottom" constant="10" id="Ydt-gr-7X5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Score: 0" id="j2R-2I-Abv">
+                        <barButtonItem key="backBarButtonItem" title=" " id="URn-oL-zFA">
+                            <color key="tintColor" red="0.4039215686" green="0.32194201430000002" blue="0.067480073840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answerButton1" destination="rUP-Bg-6xo" id="t96-o9-Wun"/>
+                        <outlet property="answerButton2" destination="gIM-tC-wQf" id="cxd-cF-Qja"/>
+                        <outlet property="answerButton3" destination="SvJ-Gj-eLk" id="Xmc-Rm-lLZ"/>
+                        <outlet property="answerButton4" destination="cEm-lv-Ntz" id="aFv-Ej-WI9"/>
+                        <outlet property="catImage" destination="RaJ-t5-i6G" id="Mgz-qB-yNe"/>
+                        <segue destination="mkz-rJ-0Mu" kind="show" identifier="GameToCorrectAnswer" id="CSV-Qm-DFS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.2" y="120.08995502248877"/>
+        </scene>
+        <!--Correct AnswerVC-->
+        <scene sceneID="SnD-DQ-1NN">
+            <objects>
+                <viewController id="mkz-rJ-0Mu" customClass="CorrectAnswerVC" customModule="Cat_breeds_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rUy-Ed-2ER">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0oa-hK-iVU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0oa-hK-iVU" secondAttribute="height" multiplier="69:55" id="bdf-Dn-Fbb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Cat Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="n9e-fm-csK">
+                                <rect key="frame" x="10" y="423" width="394" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="nbK-NR-wlh">
+                                <rect key="frame" x="10" y="509" width="394" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperament" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcl-k2-EYj">
+                                <rect key="frame" x="10" y="454" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GJJ-zP-MPN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSg-b2-gYh">
+                                <rect key="frame" x="124.5" y="809" width="165" height="43"/>
+                                <color key="backgroundColor" red="0.360556245" green="0.28737807739999999" blue="0.060235362319999999" alpha="0.8204730308" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="gmh-ei-Fce"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm5-FT-fRv"/>
+                                    <action selector="nextButtonTapped:" destination="mkz-rJ-0Mu" eventType="touchUpInside" id="BlX-0K-xx3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93150652879999996" green="0.73945358809999995" blue="0.36089487669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0oa-hK-iVU" firstAttribute="top" secondItem="bh4-c1-nU2" secondAttribute="top" id="21o-7V-OlF"/>
+                            <constraint firstItem="RSg-b2-gYh" firstAttribute="height" secondItem="rUy-Ed-2ER" secondAttribute="height" multiplier="0.0479911" id="2iH-wb-bVI"/>
+                            <constraint firstItem="bh4-c1-nU2" firstAttribute="trailing" secondItem="nbK-NR-wlh" secondAttribute="trailing" constant="10" id="3qs-Se-l2v"/>
+                            <constraint firstItem="kcl-k2-EYj" firstAttribute="top" secondItem="n9e-fm-csK" secondAttribute="bottom" constant="2" id="4ni-kE-JvJ"/>
+                            <constraint firstItem="nbK-NR-wlh" firstAttribute="top" secondItem="kcl-k2-EYj" secondAttribute="bottom" constant="5" id="7F7-ag-59f"/>
+                            <constraint firstItem="n9e-fm-csK" firstAttribute="leading" secondItem="bh4-c1-nU2" secondAttribute="leading" constant="10" id="CLv-xz-B5U"/>
+                            <constraint firstItem="kcl-k2-EYj" firstAttribute="centerX" secondItem="rUy-Ed-2ER" secondAttribute="centerX" id="Lc4-Iw-YyE"/>
+                            <constraint firstItem="RSg-b2-gYh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nbK-NR-wlh" secondAttribute="bottom" constant="5" id="OJ0-iV-zUi"/>
+                            <constraint firstItem="nbK-NR-wlh" firstAttribute="leading" secondItem="bh4-c1-nU2" secondAttribute="leading" constant="10" id="PGZ-9i-QOQ"/>
+                            <constraint firstItem="bh4-c1-nU2" firstAttribute="trailing" secondItem="kcl-k2-EYj" secondAttribute="trailing" constant="10" id="XkP-0K-SrR"/>
+                            <constraint firstItem="kcl-k2-EYj" firstAttribute="leading" secondItem="bh4-c1-nU2" secondAttribute="leading" constant="10" id="Zog-Ga-nH5"/>
+                            <constraint firstItem="bh4-c1-nU2" firstAttribute="trailing" secondItem="n9e-fm-csK" secondAttribute="trailing" constant="10" id="Zry-ol-Fci"/>
+                            <constraint firstItem="RSg-b2-gYh" firstAttribute="centerX" secondItem="rUy-Ed-2ER" secondAttribute="centerX" id="ctA-b1-gQs"/>
+                            <constraint firstItem="RSg-b2-gYh" firstAttribute="centerX" secondItem="rUy-Ed-2ER" secondAttribute="centerX" id="dxh-8m-uqo"/>
+                            <constraint firstItem="0oa-hK-iVU" firstAttribute="leading" secondItem="bh4-c1-nU2" secondAttribute="leading" id="hrJ-Z1-zwi"/>
+                            <constraint firstItem="bh4-c1-nU2" firstAttribute="trailing" secondItem="0oa-hK-iVU" secondAttribute="trailing" id="j4c-E9-1KY"/>
+                            <constraint firstItem="n9e-fm-csK" firstAttribute="centerX" secondItem="rUy-Ed-2ER" secondAttribute="centerX" id="kld-RJ-TVz"/>
+                            <constraint firstItem="n9e-fm-csK" firstAttribute="top" secondItem="0oa-hK-iVU" secondAttribute="bottom" constant="5" id="n1Q-0h-OoN"/>
+                            <constraint firstItem="bh4-c1-nU2" firstAttribute="bottom" secondItem="RSg-b2-gYh" secondAttribute="bottom" constant="10" id="psq-TM-3RE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bh4-c1-nU2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e5J-Jf-uBa">
+                        <barButtonItem key="backBarButtonItem" title=" " id="AoD-Zn-UN8"/>
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="LeG-cR-1T9">
+                            <color key="tintColor" red="0.4039215686" green="0.32194201430000002" blue="0.067480073840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="moreInfoTapped:" destination="mkz-rJ-0Mu" id="Kbl-Sa-Azy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="catDescritptionLabel" destination="nbK-NR-wlh" id="eBG-fg-byj"/>
+                        <outlet property="catImageView" destination="0oa-hK-iVU" id="A0V-ie-3nR"/>
+                        <outlet property="catNameLabel" destination="n9e-fm-csK" id="ILh-tC-aRw"/>
+                        <outlet property="nextButton" destination="RSg-b2-gYh" id="EUk-lK-7bQ"/>
+                        <outlet property="temperamentLabel" destination="kcl-k2-EYj" id="V7U-aC-Gme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DkT-tR-AcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847.826086956522" y="113.83928571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jz9-VO-ccD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ys-61-QC2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OJr-aE-Qeg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aKd-fy-bwz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWz-gJ-Hcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
